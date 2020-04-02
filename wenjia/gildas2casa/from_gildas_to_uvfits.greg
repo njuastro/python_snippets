@@ -1,0 +1,13 @@
+define char*100 infile outfile 
+let infile  &1 
+let outfile &2 
+
+
+sic dele 'outfile'
+fits 'outfile' from 'infile'  /style casa
+say " -----------------------------------"
+say " The output file is:    " 'outfile'
+say " -----------------------------------"
+
+exit 
+
